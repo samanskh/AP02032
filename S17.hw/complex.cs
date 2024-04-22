@@ -25,11 +25,13 @@ public class complex
     }
         public static complex operator /(complex a,complex b)
     {
-        if (b.Real == 0 || b.Im ==0)
-        {
-            return new complex(0,0);
-        }
+        try{
         return new complex(a.Real/b.Real,a.Im/b.Im);
+        }
+        catch(DivideByZeroException){
+            return new complex(0,0);
+
+        }
     }
 
 }
