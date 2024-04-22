@@ -22,6 +22,19 @@ class Program
             }
             System.Console.WriteLine();
         }
+        //////////////////////////
+        complex a = new complex(2,3);
+        complex b = new complex(1,1);
+        complex c = a+b;
+        System.Console.WriteLine($"{c.Real}+{c.Im}i");
+        c = -a;
+        System.Console.WriteLine($"{c.Real}+{c.Im}i");
+        c = a-b;
+        System.Console.WriteLine($"{c.Real}+{c.Im}i");
+        c = a*b;
+        System.Console.WriteLine($"{c.Real}+{c.Im}i");
+        c = a/b;
+        System.Console.WriteLine($"{c.Real}+{c.Im}i");
     }
     static bool IS_Prime(int a)
     {
